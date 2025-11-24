@@ -1,0 +1,117 @@
+[
+  {
+    "id": 1,
+    "name": "Shield Bearer",
+    "cost": 2,
+    "power": 3,
+    "ability": {
+      "type": "GainPoints",
+      "value": 2
+    }
+  },
+  {
+    "id": 2,
+    "name": "Fire Mage",
+    "cost": 3,
+    "power": 4,
+    "ability": {
+      "type": "StealPoints",
+      "value": 3
+    }
+  },
+  {
+    "id": 3,
+    "name": "Warrior",
+    "cost": 1,
+    "power": 2,
+    "ability": null
+  },
+  {
+    "id": 4,
+    "name": "Berserker",
+    "cost": 4,
+    "power": 5,
+    "ability": {
+      "type": "DoublePower",
+      "value": 2
+    }
+  },
+  {
+    "id": 5,
+    "name": "Scholar",
+    "cost": 2,
+    "power": 1,
+    "ability": {
+      "type": "DrawExtraCard",
+      "value": 2
+    }
+  },
+  {
+    "id": 6,
+    "name": "Thief",
+    "cost": 2,
+    "power": 2,
+    "ability": {
+      "type": "DiscardOpponentRandomCard",
+      "value": 1
+    }
+  },
+  {
+    "id": 7,
+    "name": "Assassin",
+    "cost": 3,
+    "power": 3,
+    "ability": {
+      "type": "DestroyOpponentCardInPlay",
+      "value": 1
+    }
+  },
+  {
+    "id": 8,
+    "name": "Knight",
+    "cost": 3,
+    "power": 4,
+    "ability": {
+      "type": "GainPoints",
+      "value": 1
+    }
+  },
+  {
+    "id": 9,
+    "name": "Archer",
+    "cost": 1,
+    "power": 1,
+    "ability": null
+  },
+  {
+    "id": 10,
+    "name": "Wizard",
+    "cost": 4,
+    "power": 3,
+    "ability": {
+      "type": "StealPoints",
+      "value": 5
+    }
+  },
+  {
+    "id": 11,
+    "name": "Paladin",
+    "cost": 5,
+    "power": 6,
+    "ability": {
+      "type": "GainPoints",
+      "value": 3
+    }
+  },
+  {
+    "id": 12,
+    "name": "Rogue",
+    "cost": 2,
+    "power": 2,
+    "ability": {
+      "type": "DiscardOpponentRandomCard",
+      "value": 2
+    }
+  }
+]
+
