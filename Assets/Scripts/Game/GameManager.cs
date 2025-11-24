@@ -20,7 +20,6 @@ namespace CardGame.Game
         public float TurnDuration { get; private set; } = 30f;
 
         private NetworkGameManager _networkManager;
-        private bool _bothPlayersReady = false;
         private Dictionary<string, List<int>> _pendingCardSelections = new Dictionary<string, List<int>>();
 
         private void Awake()
@@ -39,7 +38,7 @@ namespace CardGame.Game
 
         private void Start()
         {
-            _networkManager = FindObjectOfType<NetworkGameManager>();
+            _networkManager = FindFirstObjectByType<NetworkGameManager>();
             GameEvents.OnPlayerEndedTurn += HandlePlayerEndedTurn;
         }
 
@@ -112,7 +111,6 @@ namespace CardGame.Game
             CurrentPlayerId = playerIds[(CurrentTurn - 1) % playerIds.Length];
 
             TurnTimer = TurnDuration;
-            _bothPlayersReady = false;
             _pendingCardSelections.Clear();
 
             GameEvents.InvokeTurnStart(new TurnStartEventArgs

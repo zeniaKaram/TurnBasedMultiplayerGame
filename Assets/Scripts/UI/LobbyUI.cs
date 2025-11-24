@@ -21,7 +21,7 @@ namespace CardGame.UI
 
         private void Start()
         {
-            _networkManager = FindObjectOfType<NetworkManager>();
+            _networkManager = FindFirstObjectByType<NetworkManager>();
             
             hostButton.onClick.AddListener(OnHostClicked);
             joinButton.onClick.AddListener(OnJoinClicked);

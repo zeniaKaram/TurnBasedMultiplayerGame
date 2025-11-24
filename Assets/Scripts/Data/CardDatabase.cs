@@ -13,7 +13,7 @@ namespace CardGame.Data
             {
                 if (_instance == null)
                 {
-                    _instance = FindObjectOfType<CardDatabase>();
+                    _instance = FindFirstObjectByType<CardDatabase>();
                 }
                 return _instance;
             }
